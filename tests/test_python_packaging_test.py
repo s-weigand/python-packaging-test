@@ -2,7 +2,6 @@
 # -*- coding: utf-8 -*-
 
 """Tests for `python_packaging_test` package."""
-from __future__ import absolute_import
 import pytest
 
 
