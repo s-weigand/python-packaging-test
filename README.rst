@@ -2,8 +2,8 @@
 python-packaging-test
 =====================
 
-.. image:: https://img.shields.io/travis/s-weigand/python_packaging_test.svg
-        :target: https://travis-ci.org/s-weigand/python_packaging_test
+.. image:: https://travis-ci.org/s-weigand/python-packaging-test.svg?branch=master
+    :target: https://travis-ci.org/s-weigand/python-packaging-test
 
 
 This is a test project for packaging and deploying python packages with automated builds
