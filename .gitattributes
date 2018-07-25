@@ -1,1 +1,2 @@
 python_packaging_test/_version.py export-subst
+_version.py export-subst

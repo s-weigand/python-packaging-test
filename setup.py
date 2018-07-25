@@ -4,7 +4,7 @@
 """The setup script."""
 
 from setuptools import setup, find_packages
-from python_packaging_test._version import get_versions
+from _version import get_versions
 
 VERSION = get_versions()['version']
 del get_versions
