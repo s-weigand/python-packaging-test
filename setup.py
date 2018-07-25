@@ -7,6 +7,7 @@ from setuptools import setup, find_packages
 from python_packaging_test._version import get_versions
 
 VERSION = get_versions()['version']
+del get_versions
 
 with open('README.rst') as readme_file:
     readme = readme_file.read()
