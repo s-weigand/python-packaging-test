@@ -6,7 +6,8 @@ python-packaging-test
         :target: https://travis-ci.org/s-weigand/python_packaging_test
 
 
-This is a test project for packaging and deploying python packages with automated builds and deployment to PyPi and anaconda[D[D[D[D[D[D[A
+This is a test project for packaging and deploying python packages with automated builds
+and deployment to PyPi and anaconda
 
 
 * Free software: Apache Software License 2.0
