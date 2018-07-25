@@ -3,7 +3,6 @@ python:
 - 3.6
 - 3.5
 - 3.4
-
 install: pip install -U tox-travis
 script: tox
 deploy:
@@ -11,9 +10,9 @@ deploy:
   distributions: sdist bdist_wheel
   user: s-weigand
   server: https://test.pypi.org/legacy/
+  skip_cleanup: true
   password:
-    secure: b0mx1bXto2DubK6wQ6p21wxhCAa0mnxp3nv87of4rblAltP+5yHdkcVrENjXeTPZ8guc6jVpVkgL/bIYD3TFV3QfFa42gv1EJQ8pB5GJ6HRLsZrYx/PGgP0vpBsj6Wa6MKQHnyyr8QmKViNDzIr1jKHdLISLSe3ifMLWRxukFffb/e6vWWU4FWUGLpMwdlpAwclPuaUDxYqh45TEa0y/3RzQZ8aCB5gffj0T3/8sMkQW4GdgOI6gZ/KYVhnuP9aB1VbT249KJ0PxwN/U/K21cvYh1Vjiv61qhtmXZQ3NNNoEZD/dJqEYJepaGX3BhRqn648p2j+THZJUKO9RHlKNJ/pG3fImicRz9cwPXNZEahafQJ2cCpc+KNY86ktcB0hW3YMtMLzSrvlO/5rBWAueZcFxxLjKQi1Tz2UjRdsHG5z3XUOzpvnP8fgfPORCuE53TBA4+dJeqoh3G8HBrJMzPUv9znWoHujZRXRn0RHssaRtUSmZ9mmQr/2MW7cq0Kutdro8/Eiporshb1/qLS6gn40xkPlQe1BFTrGdKngGboirpHxxIdI6UU4pR6QHWnfjprClb+kC3kActMXYyuWRZWVHOmHLjSLqrDCHiONzmmw1YCUYNejy+SfQo7o0wH7WjglVDBOEgpUbbl2txC0JesPCgozlEXxP7zk3w/TvgoU=
+    secure: uH3d11n9UIiOw04S1hC+ihkKHgKCyj8JxOBaBCc3LYAAxFNNHYQx6+Wr8JDO7UpoKu0efI1/SKof1/6CKtA0Pk0jT+64PXBfYldneGFqF0et1zLEpVx1G557aiZNl4HSUhjYchlcuUyhank4V8qif7JI/n6CpB67xzQxE1ZYyxYs2DnhlH0Zm+yU8au/dJONTGet2Tqbue7GiJtj+AAi5jYMfT3dfR2Ny820/Go0LFI4JBlrHPoNqLfx1LuiPg1y/mKNSPd89aiU+mEBqyAP0L7G81tdIvyzR0Xo+ycMYpUjssHGurnvEgWVBsAbcKUvM71CGhQfFnaMLNu0rKDTNJ4NLFeo8yOoI5t8p3YJJm7ooMwZttliq9WgqF7eh/yrSEdOBWDRkBbFzFUKa6yOv4Y0VBwEqJRDCql1zKd6R0iDe7qXLxnaNgAPZ6RN11cW55ZVA0GUtDrLsBJIJFwa+9zvoG6Neg8NWB5EBA2yJuDQlKRnCB04wPFjsNUHzUjKiXWRe+54/t6lVwU4EHeBrdSUmz8sN83Dp/lu4LEW+bHjJlPqafjZkqr8HXW8dF146+N9e3jGv6tGAEnIjMa/LVZoEL2HEwKhVudLoh2/07NUAp5CG2Yev00EuQsKjhwoqNxw48TQ2+YPjGy9uXKMZY4peACYIGdvb4/NcaiyHZo=
   on:
     tags: true
     repo: s-weigand/python-packaging-test
-    python: 3.6
