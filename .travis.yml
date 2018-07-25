@@ -20,7 +20,7 @@ matrix:
     - python: "3.6"
       env:
         - linux-py36
-        - DEPLOY=true
+        - DEPLOY_ALL=true
 
     - python: "3.7-dev"  # 3.7 development branch
       env: linux-py37
@@ -79,4 +79,4 @@ deploy:
     on:
       tags: true
       repo: s-weigand/python-packaging-test
-      condition: "DEPLOY = true"
+      condition: "$DEPLOY_ALL = true"
