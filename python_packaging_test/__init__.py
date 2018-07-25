@@ -3,9 +3,7 @@
 """Top-level package for python-packaging-test."""
 
 from python_packaging_test.python_packaging_test import demo_function  # noqa:
-from _version import get_versions
-__version__ = get_versions()['version']
-del get_versions
+__version__ = '0.0.6'
 
 __author__ = """Sebastian Weigand"""
 __email__ = 's.weigand.phy@gmail.com'
