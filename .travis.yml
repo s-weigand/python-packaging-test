@@ -1,8 +1,4 @@
 language: python
-python:
-- 3.6
-- 3.5
-- 3.7-dev
 
 
 matrix:
@@ -19,6 +15,15 @@ matrix:
       after_success:
       # this prevents the tests to upload stuff to coveralls.io
         - echo "done"
+
+    # LINUX
+    - python: "3.6"
+      env:
+        - linux-py36
+        - DEPLOY=true
+
+    - python: "3.7-dev"  # 3.7 development branch
+      env: linux-py37
 
     # OSX
     - language: generic
@@ -49,8 +54,19 @@ matrix:
         - source activate py37
         - python -m pip install -U pip>=9.0.1
 
-install: pip install -U tox-travis
-script: tox
+before_install:
+  - echo "before_install"
+  - python -m pip install -U pip>=9.0.1
+
+install:
+  - pip install coveralls
+  - pip install -r requirements_dev.txt
+
+script:
+  - pip install .
+  - py.test  tests
+  - pip freeze
+
 deploy:
 # full deploy
   - provider: pypi
@@ -63,4 +79,4 @@ deploy:
     on:
       tags: true
       repo: s-weigand/python-packaging-test
-      python: 3.6
+      condition: "DEPLOY = true"
