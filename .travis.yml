@@ -16,3 +16,4 @@ deploy:
   on:
     tags: true
     repo: s-weigand/python-packaging-test
+    python: 3.6
