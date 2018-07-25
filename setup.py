@@ -35,8 +35,9 @@ setup(
         'Programming Language :: Python :: 3.6',
         'Programming Language :: Python :: 3.7',
     ],
-    description="This is a test project for packaging and deploying python packages with "
-                "automated builds and deployment to PyPi and anaconda",
+    description="This is a test project for packaging and deploying python "
+                "packages with automated builds and deployment to PyPi and "
+                "anaconda",
     install_requires=requirements,
     license="Apache Software License 2.0",
     long_description=readme + '\n\n' + history,

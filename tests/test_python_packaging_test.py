@@ -4,7 +4,6 @@
 """Tests for `python_packaging_test` package."""
 
 
-import python_packaging_test
 from python_packaging_test import demo_function
 
 

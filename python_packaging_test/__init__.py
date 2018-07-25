@@ -10,5 +10,5 @@ del get_versions
 __author__ = """Sebastian Weigand"""
 __email__ = 's.weigand.phy@gmail.com'
 
-# testing to __init__ imports
-import numpy as np
+# testing __init__ imports
+import numpy as np  # noqa:
