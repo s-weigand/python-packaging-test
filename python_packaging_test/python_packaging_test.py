@@ -2,5 +2,6 @@
 
 """Main module."""
 
+
 def demo_function():
     return "demo"
