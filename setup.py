@@ -4,6 +4,9 @@
 """The setup script."""
 
 from setuptools import setup, find_packages
+from python_packaging_test._version import get_versions
+
+VERSION = get_versions()['version']
 
 with open('README.rst') as readme_file:
     readme = readme_file.read()
@@ -44,6 +47,6 @@ setup(
     test_suite='tests',
     tests_require=test_requirements,
     url='https://github.com/s-weigand/python_packaging_test',
-    version='0.0.1',
+    version=VERSION,
     zip_safe=False,
 )
