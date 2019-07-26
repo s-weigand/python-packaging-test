@@ -13,4 +13,4 @@ pytest-runner>=4.2
 
 # usage dependency which should be fixed version, 
 # so pyup creates PR's and errors can be found
-numpy==1.16.3
+numpy==1.17.0
