@@ -39,4 +39,5 @@ jobs:
           pip install -r requirements_dev.txt
       - name: Test with tox
         run: |
-          tox --skip-missing-interpreters
+          python --version
+          py.test

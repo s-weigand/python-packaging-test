@@ -1,6 +1,5 @@
 language: python
 
-
 matrix:
   fast_finish: true
   include:
@@ -13,23 +12,21 @@ matrix:
       script:
         - tox
       after_success:
-      # this prevents the tests to upload stuff to coveralls.io
+        # this prevents the tests to upload stuff to coveralls.io
         - echo "done"
 
     # LINUX
     - python: "3.6"
-      env:
-        - linux-py36
-        - DEPLOY_ALL=true
+      name: linux-py36
 
-    - python: "3.7-dev"  # 3.7 development branch
-      env: linux-py37
+    - python: "3.7-dev" # 3.7 development branch
+      name: linux-py37
 
     # OSX
     - language: generic
       python: 3.6
       os: osx
-      env: osx-py36
+      name: osx-py36
       before_install:
         - echo "before_install"
         - wget https://repo.continuum.io/miniconda/Miniconda3-latest-MacOSX-x86_64.sh -O miniconda.sh;
@@ -41,7 +38,7 @@ matrix:
 
     - language: generic
       python: 3.7
-      env: osx-py37
+      name: osx-py37
       os: osx
       before_install:
         - echo "before_install"
@@ -62,7 +59,7 @@ script:
   - pip freeze
 
 deploy:
-# full deploy
+  # full deploy
   - provider: pypi
     distributions: sdist bdist_wheel
     user: s-weigand
