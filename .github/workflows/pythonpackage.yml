@@ -14,10 +14,11 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install -r requirements_dev.txt
+          pip install flake8
       - name: Lint with flake8
         run: |
-          tox -e flake8
+          flake8 python_packaging_test
+      - uses: wrboyce/python-lint-action@master
 
   build:
     runs-on: ${{ matrix.os }}
@@ -40,4 +41,4 @@ jobs:
       - name: Test with tox
         run: |
           python --version
-          py.test
+          py.test python_packaging_test
