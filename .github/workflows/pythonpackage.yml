@@ -18,7 +18,7 @@ jobs:
       - name: Lint with flake8
         run: |
           flake8 python_packaging_test
-      - uses: wrboyce/python-lint-action@master
+      # - uses: wrboyce/python-lint-action@master
 
   build:
     runs-on: ${{ matrix.os }}
