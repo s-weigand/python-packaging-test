@@ -11,6 +11,6 @@ pytest>=4.2.0
 pluggy>=0.7.0
 pytest-runner>=4.2
 
-# usage dependency which should be fixed version, 
+# usage dependency which should be fixed version,
 # so pyup creates PR's and errors can be found
-numpy==1.17.0
+numpy==1.17.4
