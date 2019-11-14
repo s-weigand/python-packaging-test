@@ -13,9 +13,13 @@ with open('HISTORY.rst') as history_file:
 
 requirements = ["numpy"]
 
-setup_requirements = requirements+['pytest-runner', ]
+setup_requirements = requirements + [
+    'pytest-runner',
+]
 
-test_requirements = ['pytest', ]
+test_requirements = [
+    'pytest',
+]
 
 setup(
     author="Sebastian Weigand",
@@ -26,14 +30,13 @@ setup(
         'License :: OSI Approved :: Apache Software License',
         'Natural Language :: English',
         'Programming Language :: Python :: 3',
-        'Programming Language :: Python :: 3.4',
-        'Programming Language :: Python :: 3.5',
         'Programming Language :: Python :: 3.6',
         'Programming Language :: Python :: 3.7',
+        'Programming Language :: Python :: 3.8',
     ],
     description="This is a test project for packaging and deploying python "
-                "packages with automated builds and deployment to PyPi and "
-                "anaconda",
+    "packages with automated builds and deployment to PyPi and "
+    "anaconda",
     install_requires=requirements,
     license="Apache Software License 2.0",
     long_description=readme + '\n\n' + history,
