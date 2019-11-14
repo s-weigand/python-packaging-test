@@ -2,7 +2,7 @@
 python-packaging-test
 =====================
 
-.. image:: https://travis-ci.org/s-weigand/python-packaging-test.svg?branch=master
+.. image:: https://api.travis-ci.org/s-weigand/python-packaging-test.svg?branch=master
     :target: https://travis-ci.org/s-weigand/python-packaging-test
 
 
@@ -24,4 +24,4 @@ Credits
 This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
 
 .. _Cookiecutter: https://github.com/audreyr/cookiecutter
-.. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+.. _`audreyr/cookiecutter-pypackage`: https://github.com/cookiecutter/cookiecutter

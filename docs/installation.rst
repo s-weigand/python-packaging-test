@@ -19,8 +19,8 @@ This is the preferred method to install python-packaging-test, as it will always
 If you don't have `pip`_ installed, this `Python installation guide`_ can guide
 you through the process.
 
-.. _pip: https://pip.pypa.io
-.. _Python installation guide: http://docs.python-guide.org/en/latest/starting/installation/
+.. _pip: https://pip.pypa.io/en/stable/
+.. _Python installation guide: https://docs.python-guide.org/starting/installation/
 
 
 From sources
@@ -32,13 +32,13 @@ You can either clone the public repository:
 
 .. code-block:: console
 
-    $ git clone git://github.com/s-weigand/python_packaging_test
+    $ git clone git://github.com/s-weigand/python-packaging-test
 
 Or download the `tarball`_:
 
 .. code-block:: console
 
-    $ curl  -OL https://github.com/s-weigand/python_packaging_test/tarball/master
+    $ curl  -OL https://github.com/s-weigand/python-packaging-test/tarball/master
 
 Once you have a copy of the source, you can install it with:
 
@@ -47,5 +47,5 @@ Once you have a copy of the source, you can install it with:
     $ python setup.py install
 
 
-.. _Github repo: https://github.com/s-weigand/python_packaging_test
-.. _tarball: https://github.com/s-weigand/python_packaging_test/tarball/master
+.. _Github repo: https://github.com/s-weigand/python-packaging-test
+.. _tarball: https://github.com/s-weigand/python-packaging-test/tarball/master
