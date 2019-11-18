@@ -75,14 +75,14 @@ jobs:
           pip install -r requirements_dev.txt
       - name: Run tests
         run: |
-          py.test --cov=python_packaging_test --cov-config .coveragerc tests
-      - name: Coveralls upload
-        env:
-          COVERALLS_REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          COVERALLS_SERVICE_NAME: "Gigthub Actions"
-        run: |
-          python -m pip install -U coveralls
-          coveralls debug
+          py.test --cov=python_packaging_test --cov-report=xml --cov-config .coveragerc tests
+      - name: Codecov Upload
+        uses: codecov/codecov-action@v1.0.3
+        with:
+          token: ${{secrets.CODECOV_TOKEN}}
+          file: ./coverage.xml
+          flags: unittests
+          name: codecov-umbrella
 
   deploy:
     runs-on: [ubuntu-latest]
