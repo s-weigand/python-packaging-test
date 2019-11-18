@@ -77,12 +77,9 @@ jobs:
         run: |
           py.test --cov=python_packaging_test --cov-report=xml --cov-config .coveragerc tests
       - name: Codecov Upload
-        uses: codecov/codecov-action@v1.0.3
-        with:
-          token: ${{secrets.CODECOV_TOKEN}}
-          file: ./coverage.xml
-          flags: unittests
-          name: codecov-umbrella
+        run: |
+          pip install codecov
+          codecov -t ${{secrets.CODECOV_TOKEN}}
 
   deploy:
     runs-on: [ubuntu-latest]
