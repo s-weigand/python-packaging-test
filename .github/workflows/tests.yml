@@ -84,6 +84,9 @@ jobs:
       - name: Test conditional
         if: matrix.python-version==3.8
         run: echo 'Python 3.8 used'
+      - name: Print env
+        if: matrix.os=='ubuntu-latest'
+        run: printenv
 
   deploy:
     runs-on: [ubuntu-latest]
