@@ -2,12 +2,13 @@
 python-packaging-test
 =====================
 
-.. image:: https://api.travis-ci.org/s-weigand/python-packaging-test.svg?branch=master
-    :target: https://travis-ci.org/s-weigand/python-packaging-test
-
+.. image:: https://github.com/s-weigand/python-packaging-test/workflows/Tests/badge.svg
+    :target: https://github.com/s-weigand/python-packaging-test/actions
+.. image:: https://codecov.io/gh/s-weigand/python-packaging-test/branch/master/graph/badge.svg
+  :target: https://codecov.io/gh/s-weigand/python-packaging-test
 
 This is a test project for packaging and deploying python packages with automated builds
-and deployment to PyPi and anaconda
+and deployment to PyPi
 
 
 * Free software: Apache Software License 2.0
