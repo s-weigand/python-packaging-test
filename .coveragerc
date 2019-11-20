@@ -1,6 +1,7 @@
 [run]
 branch = True
-source=python_packaging_test
+source=python_packaging_test/*
+include=python_packaging_test
 omit = setup.py
        */tests/*
        */test/*
