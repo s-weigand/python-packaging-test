@@ -7,7 +7,7 @@ python-packaging-test
 
 
 This is a test project for packaging and deploying python packages with automated builds
-and deployment to PyPi and anaconda
+and deployment to PyPi
 
 
 * Free software: Apache Software License 2.0
