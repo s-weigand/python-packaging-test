@@ -14,3 +14,10 @@ def brach_function(var):
         return True
     else:
         return False
+
+
+class DemoClass:
+    class_prop = True
+
+    def dummy_method(self):
+        return True
