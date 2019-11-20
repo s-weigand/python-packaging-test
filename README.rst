@@ -2,8 +2,8 @@
 python-packaging-test
 =====================
 
-.. image:: https://api.travis-ci.org/s-weigand/python-packaging-test.svg?branch=master
-    :target: https://travis-ci.org/s-weigand/python-packaging-test
+.. image:: https://github.com/s-weigand/python-packaging-test/workflows/Tests/badge.svg
+    :target: https://github.com/s-weigand/python-packaging-test/actions
 
 
 This is a test project for packaging and deploying python packages with automated builds
