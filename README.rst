@@ -4,7 +4,8 @@ python-packaging-test
 
 .. image:: https://github.com/s-weigand/python-packaging-test/workflows/Tests/badge.svg
     :target: https://github.com/s-weigand/python-packaging-test/actions
-
+.. image:: https://codecov.io/gh/s-weigand/python-packaging-test/branch/master/graph/badge.svg
+  :target: https://codecov.io/gh/s-weigand/python-packaging-test
 
 This is a test project for packaging and deploying python packages with automated builds
 and deployment to PyPi
