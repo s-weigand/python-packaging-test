@@ -1,4 +1,4 @@
-name: Python package
+name: Test
 
 on: [push, pull_request]
 
@@ -77,9 +77,11 @@ jobs:
         run: |
           py.test --cov=python_packaging_test --cov-report=xml --cov-config .coveragerc tests
       - name: Codecov Upload
-        run: |
-          pip install codecov
-          codecov -t ${{secrets.CODECOV_TOKEN}}
+        uses: codecov/codecov-action@v1
+        with:
+          token: ${{secrets.CODECOV_TOKEN}}
+          file: ./coverage.xml
+          flags: unittests
 
   deploy:
     runs-on: [ubuntu-latest]
