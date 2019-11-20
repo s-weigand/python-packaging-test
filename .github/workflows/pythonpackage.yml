@@ -75,7 +75,7 @@ jobs:
           pip install .
       - name: Run tests
         run: |
-          py.test --cov=python_packaging_test --cov-report=xml --cov-config .coveragerc tests
+          py.test --cov=./ --cov-report term --cov-report=xml --cov-config .coveragerc tests
       - name: Codecov Upload
         uses: codecov/codecov-action@v1
         with:
